@@ -1,0 +1,48 @@
+C:\Users\achok\source\repos\GestionProduits\Data\bin\Debug\netcoreapp3.1\Data.deps.json
+C:\Users\achok\source\repos\GestionProduits\Data\bin\Debug\netcoreapp3.1\Data.dll
+C:\Users\achok\source\repos\GestionProduits\Data\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Users\achok\source\repos\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.csproj.AssemblyReference.cache
+C:\Users\achok\source\repos\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\achok\source\repos\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+C:\Users\achok\source\repos\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
+C:\Users\achok\source\repos\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+C:\Users\achok\source\repos\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.dll
+C:\Users\achok\source\repos\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.pdb
+C:\Users\achok\source\repos\GestionProduits\Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.json
+C:\Users\achok\source\repos\GestionProduits\Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.dev.json
+C:\Users\achok\source\repos\GestionProduits\Data\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\achok\source\repos\GestionProduits\Data\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\achok\source\repos\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
+C:\Users\achok\source\repos\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\4Twin SEM2\.net\wetransfer_gestionproduits_2022-02-21_0958\GestionProduits\Data\bin\Debug\netcoreapp3.1\Data.deps.json
+C:\Users\ASUS\Desktop\4Twin SEM2\.net\wetransfer_gestionproduits_2022-02-21_0958\GestionProduits\Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.json
+C:\Users\ASUS\Desktop\4Twin SEM2\.net\wetransfer_gestionproduits_2022-02-21_0958\GestionProduits\Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.dev.json
+C:\Users\ASUS\Desktop\4Twin SEM2\.net\wetransfer_gestionproduits_2022-02-21_0958\GestionProduits\Data\bin\Debug\netcoreapp3.1\Data.dll
+C:\Users\ASUS\Desktop\4Twin SEM2\.net\wetransfer_gestionproduits_2022-02-21_0958\GestionProduits\Data\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Users\ASUS\Desktop\4Twin SEM2\.net\wetransfer_gestionproduits_2022-02-21_0958\GestionProduits\Data\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\ASUS\Desktop\4Twin SEM2\.net\wetransfer_gestionproduits_2022-02-21_0958\GestionProduits\Data\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\ASUS\Desktop\4Twin SEM2\.net\wetransfer_gestionproduits_2022-02-21_0958\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\4Twin SEM2\.net\wetransfer_gestionproduits_2022-02-21_0958\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\4Twin SEM2\.net\wetransfer_gestionproduits_2022-02-21_0958\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\4Twin SEM2\.net\wetransfer_gestionproduits_2022-02-21_0958\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\4Twin SEM2\.net\wetransfer_gestionproduits_2022-02-21_0958\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\4Twin SEM2\.net\wetransfer_gestionproduits_2022-02-21_0958\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
+C:\Users\ASUS\Desktop\4Twin SEM2\.net\wetransfer_gestionproduits_2022-02-21_0958\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.dll
+C:\Users\ASUS\Desktop\4Twin SEM2\.net\wetransfer_gestionproduits_2022-02-21_0958\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.pdb
+C:\Users\ASUS\Desktop\4Twin SEM2\.net\wetransfer_gestionproduits_2022-02-21_0958\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.genruntimeconfig.cache
+E:\GestionProduits\Data\bin\Debug\netcoreapp3.1\Data.deps.json
+E:\GestionProduits\Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.json
+E:\GestionProduits\Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.dev.json
+E:\GestionProduits\Data\bin\Debug\netcoreapp3.1\Data.dll
+E:\GestionProduits\Data\bin\Debug\netcoreapp3.1\Data.pdb
+E:\GestionProduits\Data\bin\Debug\netcoreapp3.1\Domain.dll
+E:\GestionProduits\Data\bin\Debug\netcoreapp3.1\Domain.pdb
+E:\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.csproj.AssemblyReference.cache
+E:\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+E:\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
+E:\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+E:\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
+E:\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.dll
+E:\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.pdb
+E:\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.genruntimeconfig.cache

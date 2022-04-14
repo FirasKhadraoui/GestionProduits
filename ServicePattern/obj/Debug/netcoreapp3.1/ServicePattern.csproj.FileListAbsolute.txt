@@ -1,0 +1,15 @@
+E:\GestionProduits\ServicePattern\bin\Debug\netcoreapp3.1\ServicePattern.deps.json
+E:\GestionProduits\ServicePattern\bin\Debug\netcoreapp3.1\ServicePattern.dll
+E:\GestionProduits\ServicePattern\bin\Debug\netcoreapp3.1\ServicePattern.pdb
+E:\GestionProduits\ServicePattern\bin\Debug\netcoreapp3.1\Data.dll
+E:\GestionProduits\ServicePattern\bin\Debug\netcoreapp3.1\Domain.dll
+E:\GestionProduits\ServicePattern\bin\Debug\netcoreapp3.1\Data.pdb
+E:\GestionProduits\ServicePattern\bin\Debug\netcoreapp3.1\Domain.pdb
+E:\GestionProduits\ServicePattern\obj\Debug\netcoreapp3.1\ServicePattern.csproj.AssemblyReference.cache
+E:\GestionProduits\ServicePattern\obj\Debug\netcoreapp3.1\ServicePattern.GeneratedMSBuildEditorConfig.editorconfig
+E:\GestionProduits\ServicePattern\obj\Debug\netcoreapp3.1\ServicePattern.AssemblyInfoInputs.cache
+E:\GestionProduits\ServicePattern\obj\Debug\netcoreapp3.1\ServicePattern.AssemblyInfo.cs
+E:\GestionProduits\ServicePattern\obj\Debug\netcoreapp3.1\ServicePattern.csproj.CoreCompileInputs.cache
+E:\GestionProduits\ServicePattern\obj\Debug\netcoreapp3.1\ServicePattern.csproj.CopyComplete
+E:\GestionProduits\ServicePattern\obj\Debug\netcoreapp3.1\ServicePattern.dll
+E:\GestionProduits\ServicePattern\obj\Debug\netcoreapp3.1\ServicePattern.pdb
