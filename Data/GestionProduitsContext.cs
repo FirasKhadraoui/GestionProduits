@@ -7,16 +7,19 @@ using System.Linq;
 using Data.Configurations;
 namespace Data
 {
-    public class GestionProduitsContext: DbContext
+    public class GestionProduitsContext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public GestionProduitsContext(DbContextOptions<GestionProduitsContext> options) : base(options)
+            {}
+
+      /*  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseLazyLoadingProxies()
                .UseSqlServer(@"Server=localhost;Database=GestionProduitDb;Trusted_Connection=True;");
 
             
 
-        }
+        }*/
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
          {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Service;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using GP.Data.Infrastructure;
+using Data.Infrastructure;
 namespace Console
 {
     class Program

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using GP.Data.Infrastructure;
+using Data.Infrastructure;
 
 namespace ServicePattern
 {

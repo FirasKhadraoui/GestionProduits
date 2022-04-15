@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 
 
-namespace GP.Data.Infrastructure
+namespace Data.Infrastructure
 {
     public class DatabaseFactory : Disposable, IDatabaseFactory
     {

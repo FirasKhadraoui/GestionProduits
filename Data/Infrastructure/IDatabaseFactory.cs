@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GP.Data;
+using Data;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace GP.Data.Infrastructure
+namespace Data.Infrastructure
 {
     public interface IDatabaseFactory : IDisposable
     {

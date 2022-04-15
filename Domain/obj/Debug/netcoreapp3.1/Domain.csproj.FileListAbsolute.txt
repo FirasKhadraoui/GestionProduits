@@ -37,3 +37,16 @@ E:\GestionProduits\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInput
 E:\GestionProduits\Domain\obj\Debug\netcoreapp3.1\Domain.dll
 E:\GestionProduits\Domain\obj\Debug\netcoreapp3.1\Domain.pdb
 E:\GestionProduits\Domain\obj\Debug\netcoreapp3.1\Domain.genruntimeconfig.cache
+C:\Esprit\GestionProduits\Domain\bin\Debug\netcoreapp3.1\Domain.deps.json
+C:\Esprit\GestionProduits\Domain\bin\Debug\netcoreapp3.1\Domain.runtimeconfig.json
+C:\Esprit\GestionProduits\Domain\bin\Debug\netcoreapp3.1\Domain.runtimeconfig.dev.json
+C:\Esprit\GestionProduits\Domain\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Esprit\GestionProduits\Domain\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Esprit\GestionProduits\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.AssemblyReference.cache
+C:\Esprit\GestionProduits\Domain\obj\Debug\netcoreapp3.1\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Esprit\GestionProduits\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
+C:\Esprit\GestionProduits\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
+C:\Esprit\GestionProduits\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
+C:\Esprit\GestionProduits\Domain\obj\Debug\netcoreapp3.1\Domain.dll
+C:\Esprit\GestionProduits\Domain\obj\Debug\netcoreapp3.1\Domain.pdb
+C:\Esprit\GestionProduits\Domain\obj\Debug\netcoreapp3.1\Domain.genruntimeconfig.cache

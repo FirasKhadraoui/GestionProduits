@@ -7528,19 +7528,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\RANIA\\.nuget\\packages\\": {}
+    "C:\\Users\\pc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\GestionProduits\\Console\\Console.csproj",
+      "projectUniqueName": "C:\\Esprit\\GestionProduits\\Console\\Console.csproj",
       "projectName": "Console",
-      "projectPath": "E:\\GestionProduits\\Console\\Console.csproj",
-      "packagesPath": "C:\\Users\\RANIA\\.nuget\\packages\\",
-      "outputPath": "E:\\GestionProduits\\Console\\obj\\",
+      "projectPath": "C:\\Esprit\\GestionProduits\\Console\\Console.csproj",
+      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+      "outputPath": "C:\\Esprit\\GestionProduits\\Console\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\RANIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7554,14 +7554,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\GestionProduits\\Data\\Data.csproj": {
-              "projectPath": "E:\\GestionProduits\\Data\\Data.csproj"
+            "C:\\Esprit\\GestionProduits\\Data\\Data.csproj": {
+              "projectPath": "C:\\Esprit\\GestionProduits\\Data\\Data.csproj"
             },
-            "E:\\GestionProduits\\Domain\\Domain.csproj": {
-              "projectPath": "E:\\GestionProduits\\Domain\\Domain.csproj"
+            "C:\\Esprit\\GestionProduits\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Esprit\\GestionProduits\\Domain\\Domain.csproj"
             },
-            "E:\\GestionProduits\\Service\\Service.csproj": {
-              "projectPath": "E:\\GestionProduits\\Service\\Service.csproj"
+            "C:\\Esprit\\GestionProduits\\Service\\Service.csproj": {
+              "projectPath": "C:\\Esprit\\GestionProduits\\Service\\Service.csproj"
             }
           }
         }

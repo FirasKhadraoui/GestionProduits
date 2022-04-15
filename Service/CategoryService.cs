@@ -1,5 +1,5 @@
 ﻿using Domain.entities;
-using GP.Data.Infrastructure;
+using Data.Infrastructure;
 using ServicePattern;
 using System;
 using System.Collections.Generic;

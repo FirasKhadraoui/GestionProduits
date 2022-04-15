@@ -7389,19 +7389,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\RANIA\\.nuget\\packages\\": {}
+    "C:\\Users\\pc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\GestionProduits\\ServicePattern\\ServicePattern.csproj",
+      "projectUniqueName": "C:\\Esprit\\GestionProduits\\ServicePattern\\ServicePattern.csproj",
       "projectName": "ServicePattern",
-      "projectPath": "E:\\GestionProduits\\ServicePattern\\ServicePattern.csproj",
-      "packagesPath": "C:\\Users\\RANIA\\.nuget\\packages\\",
-      "outputPath": "E:\\GestionProduits\\ServicePattern\\obj\\",
+      "projectPath": "C:\\Esprit\\GestionProduits\\ServicePattern\\ServicePattern.csproj",
+      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+      "outputPath": "C:\\Esprit\\GestionProduits\\ServicePattern\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\RANIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7415,11 +7415,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\GestionProduits\\Data\\Data.csproj": {
-              "projectPath": "E:\\GestionProduits\\Data\\Data.csproj"
+            "C:\\Esprit\\GestionProduits\\Data\\Data.csproj": {
+              "projectPath": "C:\\Esprit\\GestionProduits\\Data\\Data.csproj"
             },
-            "E:\\GestionProduits\\Domain\\Domain.csproj": {
-              "projectPath": "E:\\GestionProduits\\Domain\\Domain.csproj"
+            "C:\\Esprit\\GestionProduits\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Esprit\\GestionProduits\\Domain\\Domain.csproj"
             }
           }
         }

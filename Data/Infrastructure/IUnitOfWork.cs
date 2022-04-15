@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GP.Data.Infrastructure
+namespace Data.Infrastructure
 {
     public interface IUnitOfWork : IDisposable
     {

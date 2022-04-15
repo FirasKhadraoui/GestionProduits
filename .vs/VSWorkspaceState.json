@@ -1,12 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Console",
-    "\\Data",
-    "\\Data\\Configurations",
-    "\\Domain",
-    "\\Domain\\entities",
-    "\\Service"
+    ""
   ],
   "PreviewInSolutionExplorer": false
 }
