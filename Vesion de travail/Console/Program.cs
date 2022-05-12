@@ -228,16 +228,16 @@ namespace Console
 
             //System.Console.WriteLine("Resultat de l appelle de la fonction FindProducts \n . ");
 
-            ManageProduct.FindProducts findprdct = delegate (string c)
-            {
-                foreach (Product product in products)
-                {
-                    if (product.Name.ToUpper().StartsWith(c.ToUpper()))
-                        product.GetDetails();
-                }
-            };
+            //ManageProduct.FindProducts findprdct = delegate (string c)
+            //{
+            //    foreach (Product product in products)
+            //    {
+            //        if (product.Name.ToUpper().StartsWith(c.ToUpper()))
+            //            product.GetDetails();
+            //    }
+            //};
 
-            findprdct("a");
+            //findprdct("a");
 
             //System.Console.ReadKey();
 

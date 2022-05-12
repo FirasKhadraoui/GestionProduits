@@ -11,6 +11,7 @@
           "Data": "1.0.0",
           "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Design": "5.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.0",
           "Service": "1.0.0"
@@ -1459,6 +1460,7 @@
       "Domain/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Proxies": "5.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0"
         },
         "runtime": {

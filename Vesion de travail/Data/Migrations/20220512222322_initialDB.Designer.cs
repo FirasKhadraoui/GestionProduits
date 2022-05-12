@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(GestionProduitsContext))]
-    [Migration("20211010134107_Initial")]
-    partial class Initial
+    [Migration("20220512222322_initialDB")]
+    partial class initialDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -29,55 +29,11 @@ namespace Data.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CategoryId");
 
-                    b.ToTable("MyCategories");
-                });
-
-            modelBuilder.Entity("Domain.Entities.Client", b =>
-                {
-                    b.Property<int>("Cin")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nom")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Prenom")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Cin");
-
-                    b.ToTable("Client");
-                });
-
-            modelBuilder.Entity("Domain.Entities.Facture", b =>
-                {
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ClientId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("DateAchat")
-                        .HasColumnType("datetime2");
-
-                    b.Property<float>("Prix")
-                        .HasColumnType("real");
-
-                    b.HasKey("ProductId", "ClientId", "DateAchat");
-
-                    b.HasIndex("ClientId");
-
-                    b.ToTable("Factures");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("Domain.Entities.Product", b =>
@@ -94,8 +50,11 @@ namespace Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageName")
                         .HasColumnType("nvarchar(max)");
@@ -116,6 +75,8 @@ namespace Data.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("Product");
                 });
 
             modelBuilder.Entity("Domain.Entities.Provider", b =>
@@ -161,31 +122,37 @@ namespace Data.Migrations
                     b.ToTable("ProductProvider");
                 });
 
-            modelBuilder.Entity("Domain.Entities.Facture", b =>
+            modelBuilder.Entity("Domain.Entities.Biological", b =>
                 {
-                    b.HasOne("Domain.Entities.Client", "Client")
-                        .WithMany("Factures")
-                        .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasBaseType("Domain.Entities.Product");
 
-                    b.HasOne("Domain.Entities.Product", "Product")
-                        .WithMany("Factures")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Property<string>("Herbs")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Navigation("Client");
+                    b.HasDiscriminator().HasValue("Biological");
+                });
 
-                    b.Navigation("Product");
+            modelBuilder.Entity("Domain.Entities.Chemical", b =>
+                {
+                    b.HasBaseType("Domain.Entities.Product");
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LabName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StreetAddress")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasDiscriminator().HasValue("Chemical");
                 });
 
             modelBuilder.Entity("Domain.Entities.Product", b =>
                 {
                     b.HasOne("Domain.Entities.Category", "MyCategory")
                         .WithMany("Products")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.SetNull);
+                        .HasForeignKey("CategoryId");
 
                     b.Navigation("MyCategory");
                 });
@@ -208,16 +175,6 @@ namespace Data.Migrations
             modelBuilder.Entity("Domain.Entities.Category", b =>
                 {
                     b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("Domain.Entities.Client", b =>
-                {
-                    b.Navigation("Factures");
-                });
-
-            modelBuilder.Entity("Domain.Entities.Product", b =>
-                {
-                    b.Navigation("Factures");
                 });
 #pragma warning restore 612, 618
         }

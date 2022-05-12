@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain.Entities
 {
-    public class Product : Concept
+    public class Product
     {
         public int ProductId { get; set; }
 
@@ -29,6 +29,7 @@ namespace Domain.Entities
         [Display(Name = "Date de production")] //affichage
         [DataType(DataType.Date)] //DATE valide
         public DateTime DateProd { get; set; }
+        public string TestUpdate { get; set; }
 
         public string ImageName { get; set; }  
         //foreign Key properties
@@ -39,12 +40,10 @@ namespace Domain.Entities
         public virtual Category MyCategory { get; set; }
         public virtual ICollection<Provider> Providers { get; set; }
 
-        public virtual ICollection<Facture> Factures { get; set; }
-
-        public override void GetDetails()
-        {
-            Console.WriteLine("ProductId: " + ProductId + " ; Name : " + Name + "DateProd: " + DateProd + " ; Description: " + Description + " ; Price : " + Price + " ; Quantity:" + Quantity);
-        }
+        //public override void GetDetails()
+        //{
+        //    Console.WriteLine("ProductId: " + ProductId + " ; Name : " + Name + "DateProd: " + DateProd + " ; Description: " + Description + " ; Price : " + Price + " ; Quantity:" + Quantity);
+        //}
 
         #region Partie 4: Polymorphisme
         public virtual void GetMyType()

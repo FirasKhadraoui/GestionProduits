@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Category: Concept
+    public class Category
     {
         public int CategoryId { get; set; }
         public string Name { get; set; }
@@ -14,10 +14,10 @@ namespace Domain.Entities
         //navigation properties
         public virtual ICollection<Product> Products { get; set; }
 
-        public override void GetDetails()
-        {
-            Console.WriteLine("Category Id: " + CategoryId + ";" + "Name: " + Name);
-        }
+        //public override void GetDetails()
+        //{
+        //    Console.WriteLine("Category Id: " + CategoryId + ";" + "Name: " + Name);
+        //}
 
     }
 }

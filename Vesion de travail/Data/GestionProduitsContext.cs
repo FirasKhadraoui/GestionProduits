@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
-
 using Domain.Entities;
 
 
@@ -28,7 +27,7 @@ namespace Data
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Provider> Providers { get; set; }
-        public DbSet<Client> Client { get; set; }
-        public DbSet<Facture> Factures { get; set; }
+        public DbSet<Biological> Biologicals { get; set; }
+        public DbSet<Chemical> Chemicals { get; set; }
     }
 }

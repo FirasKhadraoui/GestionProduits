@@ -14,15 +14,15 @@ namespace Domain.Entities
         //public Adress LabAddress { get; set; }
 
         #region Partie 4: Polymorphisme
-        public override void GetMyType()
-        {
-            Console.WriteLine("CHEMICAL");
-        }
-        public override void GetDetails()
-        {
-            Console.Write("City: " + City); base.GetDetails();
+        //public override void GetMyType()
+        //{
+        //    Console.WriteLine("CHEMICAL");
+        //}
+        //public override void GetDetails()
+        //{
+        //    Console.Write("City: " + City); base.GetDetails();
 
-        }
+        //}
         #endregion
     }
 }

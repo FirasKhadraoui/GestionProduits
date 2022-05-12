@@ -18,15 +18,15 @@ namespace Service
         }
 
 
-        public void GetProductByChar(string c)
-        {
-            foreach (Product product in products)
-            {
-                if (product.Name.ToUpper().StartsWith(c.ToUpper()))
-                    product.GetDetails();
-            }
+        //public void GetProductByChar(string c)
+        //{
+        //    foreach (Product product in products)
+        //    {
+        //        if (product.Name.ToUpper().StartsWith(c.ToUpper()))
+        //            product.GetDetails();
+        //    }
             
-        }
+        //}
         #region Méthodes de sélection et d'agrégation
         public List<Product> Get5Chemical(double price)
         {
