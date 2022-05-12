@@ -73,3 +73,19 @@ D:\Ecole\Ecole\Work\Cours .Net\Temp Cours .Net\42h-20200606T085244Z-001\42h_offi
 D:\Ecole\Ecole\Work\Cours .Net\Temp Cours .Net\42h-20200606T085244Z-001\42h_officiel\.Net Core\Cours Séance 4\GestionProduitsVF\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.dll
 D:\Ecole\Ecole\Work\Cours .Net\Temp Cours .Net\42h-20200606T085244Z-001\42h_officiel\.Net Core\Cours Séance 4\GestionProduitsVF\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.pdb
 D:\Ecole\Ecole\Work\Cours .Net\Temp Cours .Net\42h-20200606T085244Z-001\42h_officiel\.Net Core\Cours Séance 4\GestionProduitsVF\GestionProduits\Data\obj\Debug\netcoreapp3.1\Data.genruntimeconfig.cache
+C:\Esprit\GestionProduits\Vesion de travail\Data\bin\Debug\netcoreapp3.1\Data.deps.json
+C:\Esprit\GestionProduits\Vesion de travail\Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.json
+C:\Esprit\GestionProduits\Vesion de travail\Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.dev.json
+C:\Esprit\GestionProduits\Vesion de travail\Data\bin\Debug\netcoreapp3.1\Data.dll
+C:\Esprit\GestionProduits\Vesion de travail\Data\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Esprit\GestionProduits\Vesion de travail\Data\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Esprit\GestionProduits\Vesion de travail\Data\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Esprit\GestionProduits\Vesion de travail\Data\obj\Debug\netcoreapp3.1\Data.csproj.AssemblyReference.cache
+C:\Esprit\GestionProduits\Vesion de travail\Data\obj\Debug\netcoreapp3.1\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Esprit\GestionProduits\Vesion de travail\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+C:\Esprit\GestionProduits\Vesion de travail\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
+C:\Esprit\GestionProduits\Vesion de travail\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+C:\Esprit\GestionProduits\Vesion de travail\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
+C:\Esprit\GestionProduits\Vesion de travail\Data\obj\Debug\netcoreapp3.1\Data.dll
+C:\Esprit\GestionProduits\Vesion de travail\Data\obj\Debug\netcoreapp3.1\Data.pdb
+C:\Esprit\GestionProduits\Vesion de travail\Data\obj\Debug\netcoreapp3.1\Data.genruntimeconfig.cache

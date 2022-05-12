@@ -77,19 +77,19 @@ namespace Console
             #endregion
 
             #region Partie 5 : Itérations / Structures conditionnelles
-            Provider prov1 = new Provider() { UserName = "PROV1" };
-            Provider prov2 = new Provider() { UserName = "PROV2" };
-            Product prod1 = new Product() { Name = "PROD1", DateProd = Convert.ToDateTime("12/12/2019") };
-            Product prod2 = new Product() { Name = "PROD2", DateProd = Convert.ToDateTime("12/12/2020") };
-            prov1.Products = new List<Product>() { prod1, prod2 };
+            //Provider prov1 = new Provider() { UserName = "PROV1" };
+            //Provider prov2 = new Provider() { UserName = "PROV2" };
+            //Product prod1 = new Product() { Name = "PROD1", DateProd = Convert.ToDateTime("12/12/2019") };
+            //Product prod2 = new Product() { Name = "PROD2", DateProd = Convert.ToDateTime("12/12/2020") };
+            //prov1.Products = new List<Product>() { prod1, prod2 };
 
-            prov1.GetProducts("DATEPROD", "12/12/2019");
-            System.Console.ReadKey();
+            //prov1.GetProducts("DATEPROD", "12/12/2019");
+            //System.Console.ReadKey();
 
             #endregion
 
 
-        #region Partie 5: Collections / Itérations / Structures conditionnelles
+            #region Partie 5: Collections / Itérations / Structures conditionnelles
 
             //Category cat1 = new Category() { Name = "CAT1" };
             //Category cat2 = new Category() { Name = "CAT2" };
@@ -127,226 +127,228 @@ namespace Console
             //ListProducts.RemoveAt(1);
 
             #endregion
-        
-        #region Senario de test
-        ////Categories
-        //Category fruit = new Category() { Name = "Fruit" };
-        //Category Alimentaire = new Category() { Name = "Alimentaire" };
 
-        ////Products
-        //Product acide = new Chemical()
-        //{
-        //    DateProd = new DateTime(2000, 12, 12),
-        //    Name = "ACIDE CITRIQUE",
-        //    Description = "Monohydrate - E330 - USP32",
-        //    MyCategory = Alimentaire,
-        //    Price = 90,
-        //    Quantity = 30,
-        //    City = "Sousse"
-        //};
-        //Product cacao = new Chemical()
-        //{
-        //    DateProd = new DateTime(2000, 12, 12),
-        //    Name = "POUDRE DE CACAO NATURELLE",
-        //    Description = "10% -12%",
-        //    MyCategory = Alimentaire,
-        //    Price = 419,
-        //    Quantity = 80,
-        //    City = "Sfax"
-        //};
+            #region Senario de test
+            //Categories
+            Category fruit = new Category() { Name = "Fruit" };
+            Category Alimentaire = new Category() { Name = "Alimentaire" };
 
-        //Product dioxyde = new Chemical()
-        //{
-        //    DateProd = new DateTime(2000, 12, 12),
-        //    Name = "DIOXYDE DE TITANE",
-        //    Description = "TiO2 grade alimentaire, cosmétique et pharmaceutique.",
-        //    MyCategory = Alimentaire,
-        //    Price = 200,
-        //    Quantity = 50,
-        //    City = "Tunis"
-        //};
-        //Product amidon = new Chemical()
-        //{
-        //    DateProd = new DateTime(2000, 12, 12),
-        //    Name = "AMIDON DE MAÏS",
-        //    Description = "Amidon de maïs natif",
-        //    MyCategory = Alimentaire,
-        //    Price = 70,
-        //    Quantity = 30,
-        //    City = "Tunis"
-        //};
-        //Product blackberry = new Biological()
-        //{
-        //    DateProd = new DateTime(2000, 12, 12),
-        //    Name = "Blackberry",
-        //    Description = "",
-        //    MyCategory = fruit,
-        //    Price = 60,
-        //    ProductId = 0,
-        //    Quantity = 0
+            //Products
+            Product acide = new Chemical()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Name = "ACIDE CITRIQUE",
+                Description = "Monohydrate - E330 - USP32",
+                MyCategory = Alimentaire,
+                Price = 90,
+                Quantity = 30,
+                City = "Sousse"
+            };
+            Product cacao = new Chemical()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Name = "POUDRE DE CACAO NATURELLE",
+                Description = "10% -12%",
+                MyCategory = Alimentaire,
+                Price = 419,
+                Quantity = 80,
+                City = "Sfax"
+            };
 
-        //};
+            Product dioxyde = new Chemical()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Name = "DIOXYDE DE TITANE",
+                Description = "TiO2 grade alimentaire, cosmétique et pharmaceutique.",
+                MyCategory = Alimentaire,
+                Price = 200,
+                Quantity = 50,
+                City = "Tunis"
+            };
+            Product amidon = new Chemical()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Name = "AMIDON DE MAÏS",
+                Description = "Amidon de maïs natif",
+                MyCategory = Alimentaire,
+                Price = 70,
+                Quantity = 30,
+                City = "Tunis"
+            };
+            Product blackberry = new Biological()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Name = "Blackberry",
+                Description = "",
+                MyCategory = fruit,
+                Price = 60,
+                ProductId = 0,
+                Quantity = 0
 
-        //Product apple = new Biological()
-        //{
-        //    DateProd = new DateTime(2000, 12, 12),
-        //    Description = "",
-        //    MyCategory = fruit,
-        //    Name = "Apple",
-        //    Price = 100.00,
-        //    ProductId = 0,
-        //    Quantity = 100
+            };
 
-        //};
+            Product apple = new Biological()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Description = "",
+                MyCategory = fruit,
+                Name = "Apple",
+                Price = 100.00,
+                ProductId = 0,
+                Quantity = 100
 
-        //Product avocado = new Biological()
-        //{
-        //    DateProd = new DateTime(2000, 12, 12),
-        //    Description = "",
-        //    MyCategory = fruit,
-        //    Name = "Avocado",
-        //    Price = 100.00,
-        //    ProductId = 0,
-        //    Quantity = 100
+            };
 
-        //};
+            Product avocado = new Biological()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Description = "",
+                MyCategory = fruit,
+                Name = "Avocado",
+                Price = 100.00,
+                ProductId = 0,
+                Quantity = 100
 
-        //List<Product> products = new List<Product>() { acide, cacao, dioxyde, amidon, blackberry, apple, avocado };
-        //ManageProduct manageProduct = new ManageProduct(products);
+            };
 
-        //Provider sater = new Provider() { Id = 1, UserName = "Medical Provider" };
-        //Provider sudMedical = new Provider() { Id = 2, UserName = "Fruit-SA Provider" };
-        //Provider palliserSa = new Provider() { Id = 3, UserName = "Fruit-CP  Provider" };
-        //Provider prov4 = new Provider() { Id = 4, UserName = "Chemical Med-Provider" };
-        //Provider prov5 = new Provider() { Id = 5, UserName = "Bio Provider" };
-        //List<Provider> providers = new List<Provider>() { sater, sudMedical, palliserSa, prov4, prov5 };
-        //ManageProvider manageProvider = new ManageProvider(providers);
-        #endregion
+            List<Product> products = new List<Product>() { acide, cacao, dioxyde, amidon, blackberry, apple, avocado };
+            ManageProduct manageProduct = new ManageProduct(products);
 
-
-        #region Les méthodes anonymes 
-
-        //System.Console.WriteLine("Resultat de l appelle de la fonction FindProducts \n . ");
-
-        //ManageProduct.FindProducts findprdct = delegate (string c) {
-        //    foreach (Product product in products)
-        //    {
-        //        if (product.Name.ToUpper().StartsWith(c.ToUpper()))
-        //            product.GetDetails();
-        //    }
-        //};
-        //findprdct("a");
-
-        //System.Console.ReadKey();
-
-        //System.Console.WriteLine("Resultat de l appelle de la fonction ScanProduct \n . ");
-
-        //ManageProduct.ScanProduct scanprdct = delegate (Category category) {
-        //    foreach (Product product in products)
-        //    {
-        //        if (product.MyCategory.Name.Equals(category.Name))
-        //            product.GetDetails();
-        //    }
-        //};
-        //scanprdct(fruit);
-
-        //System.Console.ReadKey();
+            Provider sater = new Provider() { Id = 1, UserName = "Medical Provider" };
+            Provider sudMedical = new Provider() { Id = 2, UserName = "Fruit-SA Provider" };
+            Provider palliserSa = new Provider() { Id = 3, UserName = "Fruit-CP  Provider" };
+            Provider prov4 = new Provider() { Id = 4, UserName = "Chemical Med-Provider" };
+            Provider prov5 = new Provider() { Id = 5, UserName = "Bio Provider" };
+            List<Provider> providers = new List<Provider>() { sater, sudMedical, palliserSa, prov4, prov5 };
+            ManageProvider manageProvider = new ManageProvider(providers);
+            #endregion
 
 
-        //// Call By Function
+            #region Les méthodes anonymes 
 
-        //System.Console.WriteLine("Resultat de l appelle de l appelle a travers fonction \n . ");
+            //System.Console.WriteLine("Resultat de l appelle de la fonction FindProducts \n . ");
 
-        //ManageProduct.FindProducts findprdct1 = new ManageProduct.FindProducts(manageProduct.GetProductByChar);
+            ManageProduct.FindProducts findprdct = delegate (string c)
+            {
+                foreach (Product product in products)
+                {
+                    if (product.Name.ToUpper().StartsWith(c.ToUpper()))
+                        product.GetDetails();
+                }
+            };
 
-        //findprdct1("a");
+            findprdct("a");
 
-        //System.Console.ReadKey();
+            //System.Console.ReadKey();
 
-        #endregion
+            //System.Console.WriteLine("Resultat de l appelle de la fonction ScanProduct \n . ");
 
-        #region LinQ
+            //ManageProduct.ScanProduct scanprdct = delegate (Category category) {
+            //    foreach (Product product in products)
+            //    {
+            //        if (product.MyCategory.Name.Equals(category.Name))
+            //            product.GetDetails();
+            //    }
+            //};
+            //scanprdct(fruit);
 
-        //// ----- ManageProducts 
-
-        ////Get5Chemical()
-        //System.Console.WriteLine("\n*****Les cinq premiers produits chemical qui ont un prix supérieur à 50.");
-        //foreach (Product l in manageProduct.Get5Chemical(50))
-        //{
-        //    l.GetDetails();
-        //}
-
-        //System.Console.ReadKey();
-
-        ////GetProductPrice()
-        //System.Console.WriteLine("\n*****les produits qui ont un prix supérieur à 50 en ignorant les 2 premiers produits. ");
-        //foreach (Product l in manageProduct.GetProductPrice(50))
-        //{
-        //    l.GetDetails();
-        //}
-        //System.Console.ReadKey();
-
-        ////GetAveragePrice()
-        //System.Console.WriteLine($"\nPrix moyen des produits = {manageProduct.GetAveragePrice()}");
-        //System.Console.ReadKey();
-
-        ////GetMaxPrice()
-        //System.Console.WriteLine("\nLe produit de max prix est : ");
-        //var prdct = manageProduct.GetMaxPrice();
-        //prdct.GetDetails();
-        //System.Console.ReadKey();
-
-        ////GetCountProduct()
-        //System.Console.WriteLine("\nle nombre de produits chemical de Tunis = " + manageProduct.GetCountProduct("Tunis"));
-        //System.Console.ReadKey();
-
-        ////GetChemicalCity()
-        //foreach (Product l in manageProduct.GetChemicalCity())
-        //{ l.GetDetails(); }
-        //System.Console.ReadKey();
+            //System.Console.ReadKey();
 
 
-        ////GetChemicalGroupByCity()
-        //System.Console.WriteLine("\nLa liste des produits chemical ordonnés et groupé par city.");
-        //manageProduct.GetChemicalGroupByCity();
-        //System.Console.ReadKey();
+            //// Call By Function
 
-        //// ----- manageProvider 
+            //System.Console.WriteLine("Resultat de l appelle de l appelle a travers fonction \n . ");
 
-        ////GetProviderByName()
+            //ManageProduct.FindProducts findprdct1 = new ManageProduct.FindProducts(manageProduct.GetProductByChar);
 
-        //List<Provider> listProvider = manageProvider.GetProviderByName("Med");
-        //foreach (Provider l in listProvider)
-        //{
-        //    l.GetDetails();
-        //}
+            //findprdct1("a");
 
-        //System.Console.ReadKey();
+            //System.Console.ReadKey();
 
-        //// GetFirstProviderByName()
-        //System.Console.WriteLine("\n*****Le premier provider contenant le mot 'Fruit'. ");
-        //manageProvider.GetFirstProviderByName("Fruit").GetDetails();
+            #endregion
 
-        //System.Console.ReadKey();
+            #region LinQ
 
-        //// GetProviderById()
-        //System.Console.WriteLine("\n*****Le provider d'identifiant 3. ");
-        //manageProvider.GetProviderById(3).GetDetails();
-        //System.Console.ReadKey();
+            //// ----- ManageProducts 
 
-        #endregion
+            ////Get5Chemical()
+            //System.Console.WriteLine("\n*****Les cinq premiers produits chemical qui ont un prix supérieur à 50.");
+            //foreach (Product l in manageProduct.Get5Chemical(50))
+            //{
+            //    l.GetDetails();
+            //}
 
-        #region Méthodes d'extension
-        //manageProduct.UpperName(apple);
-        //System.Console.WriteLine("\n " + apple.Name);
-        //System.Console.ReadKey();
+            //System.Console.ReadKey();
 
-        //System.Console.WriteLine("\n " + manageProduct.InCategory(apple, Alimentaire));
-        //System.Console.ReadKey();
+            ////GetProductPrice()
+            //System.Console.WriteLine("\n*****les produits qui ont un prix supérieur à 50 en ignorant les 2 premiers produits. ");
+            //foreach (Product l in manageProduct.GetProductPrice(50))
+            //{
+            //    l.GetDetails();
+            //}
+            //System.Console.ReadKey();
 
-        #endregion
+            ////GetAveragePrice()
+            //System.Console.WriteLine($"\nPrix moyen des produits = {manageProduct.GetAveragePrice()}");
+            //System.Console.ReadKey();
+
+            ////GetMaxPrice()
+            //System.Console.WriteLine("\nLe produit de max prix est : ");
+            //var prdct = manageProduct.GetMaxPrice();
+            //prdct.GetDetails();
+            //System.Console.ReadKey();
+
+            ////GetCountProduct()
+            //System.Console.WriteLine("\nle nombre de produits chemical de Tunis = " + manageProduct.GetCountProduct("Tunis"));
+            //System.Console.ReadKey();
+
+            ////GetChemicalCity()
+            //foreach (Product l in manageProduct.GetChemicalCity())
+            //{ l.GetDetails(); }
+            //System.Console.ReadKey();
 
 
-    }
+            ////GetChemicalGroupByCity()
+            //System.Console.WriteLine("\nLa liste des produits chemical ordonnés et groupé par city.");
+            //manageProduct.GetChemicalGroupByCity();
+            //System.Console.ReadKey();
+
+            //// ----- manageProvider 
+
+            ////GetProviderByName()
+
+            //List<Provider> listProvider = manageProvider.GetProviderByName("Med");
+            //foreach (Provider l in listProvider)
+            //{
+            //    l.GetDetails();
+            //}
+
+            //System.Console.ReadKey();
+
+            //// GetFirstProviderByName()
+            //System.Console.WriteLine("\n*****Le premier provider contenant le mot 'Fruit'. ");
+            //manageProvider.GetFirstProviderByName("Fruit").GetDetails();
+
+            //System.Console.ReadKey();
+
+            //// GetProviderById()
+            //System.Console.WriteLine("\n*****Le provider d'identifiant 3. ");
+            //manageProvider.GetProviderById(3).GetDetails();
+            //System.Console.ReadKey();
+
+            #endregion
+
+            #region Méthodes d'extension
+            //manageProduct.UpperName(apple);
+            //System.Console.WriteLine("\n " + apple.Name);
+            //System.Console.ReadKey();
+
+            //System.Console.WriteLine("\n " + manageProduct.InCategory(apple, Alimentaire));
+            //System.Console.ReadKey();
+
+            #endregion
+
+
+        }
     }
 }

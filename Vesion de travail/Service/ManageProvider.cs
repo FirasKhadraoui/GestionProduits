@@ -9,8 +9,6 @@ namespace Service
 {
     public class ManageProvider
     {
-        
-
         private List<Provider> Providers;
 
         public ManageProvider(List<Provider> providers)

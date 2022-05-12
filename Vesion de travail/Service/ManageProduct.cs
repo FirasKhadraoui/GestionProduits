@@ -31,7 +31,7 @@ namespace Service
         public List<Product> Get5Chemical(double price)
         {
             var query = from product in products
-                        where (product.Price > price)
+                        where (product is Chemical && product.Price > price)
                         select product;
             return query.Take(5).ToList<Product>();
         }
