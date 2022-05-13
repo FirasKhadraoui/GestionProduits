@@ -25,7 +25,7 @@ namespace Service
         //        if (product.Name.ToUpper().StartsWith(c.ToUpper()))
         //            product.GetDetails();
         //    }
-            
+
         //}
         #region Méthodes de sélection et d'agrégation
         public List<Product> Get5Chemical(double price)
@@ -35,6 +35,7 @@ namespace Service
                         select product;
             return query.Take(5).ToList<Product>();
         }
+
         public IEnumerable<Product> GetProductPrice(double price)
         {
             var query = from product in products
@@ -66,18 +67,19 @@ namespace Service
         public int GetCountProduct(string city)
         {
             var listProductChemical = (from product in products
-                        where product is Chemical
-                        && ((Chemical)product).Myadress.City.Equals(city)
-                        select product).ToList();
+                                       where product is Chemical
+                                       && ((Chemical)product).Myadress.City.Equals(city)
+                                       select product).ToList();
 
             return listProductChemical.Count();
         }
+
         public List<Product> GetChemicalCity()
         {
             var listProductChemical = (from product in products
-                        where product is Chemical
-                        orderby ((Chemical)product).Myadress.City ascending // ou descending
-                        select product).ToList();
+                                       where product is Chemical
+                                       orderby ((Chemical)product).Myadress.City ascending // ou descending
+                                       select product).ToList();
 
             return listProductChemical;
         }

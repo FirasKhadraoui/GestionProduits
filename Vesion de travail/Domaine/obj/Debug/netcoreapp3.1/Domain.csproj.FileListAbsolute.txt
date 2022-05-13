@@ -46,4 +46,3 @@ C:\Esprit\GestionProduits\Vesion de travail\Domaine\obj\Debug\netcoreapp3.1\Doma
 C:\Esprit\GestionProduits\Vesion de travail\Domaine\obj\Debug\netcoreapp3.1\Domain.dll
 C:\Esprit\GestionProduits\Vesion de travail\Domaine\obj\Debug\netcoreapp3.1\Domain.pdb
 C:\Esprit\GestionProduits\Vesion de travail\Domaine\obj\Debug\netcoreapp3.1\Domain.genruntimeconfig.cache
-C:\Esprit\GestionProduits\Vesion de travail\Domaine\obj\Debug\netcoreapp3.1\Domain.csproj.AssemblyReference.cache

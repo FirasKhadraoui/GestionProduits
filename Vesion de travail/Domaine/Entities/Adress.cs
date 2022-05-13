@@ -8,9 +8,13 @@ using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
 
 
+
 namespace Domain.Entities
 {
+    //[Owned] // Sii on utilise data annotations
+
     [Owned]
+    //[ComplexType]
     public class Adress
     {   
         public string City { get; set; }

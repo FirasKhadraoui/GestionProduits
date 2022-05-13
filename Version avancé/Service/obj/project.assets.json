@@ -7414,11 +7414,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Esprit\\GestionProduits\\Service\\Service.csproj",
+      "projectUniqueName": "C:\\Esprit\\GestionProduits\\Version avancé\\Service\\Service.csproj",
       "projectName": "Service",
-      "projectPath": "C:\\Esprit\\GestionProduits\\Service\\Service.csproj",
+      "projectPath": "C:\\Esprit\\GestionProduits\\Version avancé\\Service\\Service.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Esprit\\GestionProduits\\Service\\obj\\",
+      "outputPath": "C:\\Esprit\\GestionProduits\\Version avancé\\Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7435,14 +7435,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Esprit\\GestionProduits\\Data\\Data.csproj": {
-              "projectPath": "C:\\Esprit\\GestionProduits\\Data\\Data.csproj"
+            "C:\\Esprit\\GestionProduits\\Version avancé\\Data\\Data.csproj": {
+              "projectPath": "C:\\Esprit\\GestionProduits\\Version avancé\\Data\\Data.csproj"
             },
-            "C:\\Esprit\\GestionProduits\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Esprit\\GestionProduits\\Domain\\Domain.csproj"
+            "C:\\Esprit\\GestionProduits\\Version avancé\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Esprit\\GestionProduits\\Version avancé\\Domain\\Domain.csproj"
             },
-            "C:\\Esprit\\GestionProduits\\ServicePattern\\ServicePattern.csproj": {
-              "projectPath": "C:\\Esprit\\GestionProduits\\ServicePattern\\ServicePattern.csproj"
+            "C:\\Esprit\\GestionProduits\\Version avancé\\ServicePattern\\ServicePattern.csproj": {
+              "projectPath": "C:\\Esprit\\GestionProduits\\Version avancé\\ServicePattern\\ServicePattern.csproj"
             }
           }
         }

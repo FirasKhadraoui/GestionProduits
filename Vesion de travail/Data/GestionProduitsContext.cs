@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 using Domain.Entities;
 
 
@@ -11,14 +12,9 @@ namespace Data
     {
         public GestionProduitsContext()
         {
-            //this.ChangeTracker.LazyLoadingEnabled = false;
+            // this.ChangeTracker.LazyLoadingEnabled = false;
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            
-
-        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
              optionsBuilder.UseLazyLoadingProxies()
@@ -29,5 +25,16 @@ namespace Data
         public DbSet<Provider> Providers { get; set; }
         public DbSet<Biological> Biologicals { get; set; }
         public DbSet<Chemical> Chemicals { get; set; }
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            foreach (var property in modelBuilder.Model.GetEntityTypes()
+                .SelectMany(t => t.GetProperties())
+                .Where(p => p.ClrType == typeof(string)&&p.Name.StartsWith("Name")))
+            {
+                property.SetColumnName("MyName");
+            }
+        }
     }
 }

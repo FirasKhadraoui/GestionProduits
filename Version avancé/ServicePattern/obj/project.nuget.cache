@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zXmcGc/DzDSCbD5Lm5u+tZQBcMH+jKA0kZV6PzLxHFJQfWqOgYUKMRGEsN6Bm6ovz00ptwHLXb1rdXYS0A4x9Q==",
+  "dgSpecHash": "PUCG1IyQkmfgApLnngPHnY93xt6MNiTcaNOsNhCfQzi9ztZIjlprcdXqrv1oAYY3J5VOET9kjd6Kn7pWKG/SkA==",
   "success": true,
-  "projectFilePath": "C:\\Esprit\\GestionProduits\\ServicePattern\\ServicePattern.csproj",
+  "projectFilePath": "C:\\Esprit\\GestionProduits\\Version avancé\\ServicePattern\\ServicePattern.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

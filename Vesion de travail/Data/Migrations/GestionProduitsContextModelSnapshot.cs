@@ -27,7 +27,8 @@ namespace Data.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("MyName");
 
                     b.HasKey("CategoryId");
 
@@ -60,7 +61,8 @@ namespace Data.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(25)
-                        .HasColumnType("nvarchar(25)");
+                        .HasColumnType("nvarchar(25)")
+                        .HasColumnName("MyName");
 
                     b.Property<double>("Price")
                         .HasColumnType("float");

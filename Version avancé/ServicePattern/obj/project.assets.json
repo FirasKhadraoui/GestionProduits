@@ -7394,11 +7394,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Esprit\\GestionProduits\\ServicePattern\\ServicePattern.csproj",
+      "projectUniqueName": "C:\\Esprit\\GestionProduits\\Version avancé\\ServicePattern\\ServicePattern.csproj",
       "projectName": "ServicePattern",
-      "projectPath": "C:\\Esprit\\GestionProduits\\ServicePattern\\ServicePattern.csproj",
+      "projectPath": "C:\\Esprit\\GestionProduits\\Version avancé\\ServicePattern\\ServicePattern.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Esprit\\GestionProduits\\ServicePattern\\obj\\",
+      "outputPath": "C:\\Esprit\\GestionProduits\\Version avancé\\ServicePattern\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7415,11 +7415,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Esprit\\GestionProduits\\Data\\Data.csproj": {
-              "projectPath": "C:\\Esprit\\GestionProduits\\Data\\Data.csproj"
+            "C:\\Esprit\\GestionProduits\\Version avancé\\Data\\Data.csproj": {
+              "projectPath": "C:\\Esprit\\GestionProduits\\Version avancé\\Data\\Data.csproj"
             },
-            "C:\\Esprit\\GestionProduits\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Esprit\\GestionProduits\\Domain\\Domain.csproj"
+            "C:\\Esprit\\GestionProduits\\Version avancé\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Esprit\\GestionProduits\\Version avancé\\Domain\\Domain.csproj"
             }
           }
         }

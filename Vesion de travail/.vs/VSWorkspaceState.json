@@ -1,13 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Common\\bin",
-    "\\Common\\bin\\Release",
-    "\\Console\\bin",
-    "\\Console\\bin\\Debug",
     "\\Data",
-    "\\Data\\bin"
+    "\\Data\\bin",
+    "\\Domaine",
+    "\\Domaine\\Entities"
   ],
-  "SelectedNode": "\\GestionProduits.sln",
+  "SelectedNode": "\\Domaine\\Entities\\Provider.cs",
   "PreviewInSolutionExplorer": false
 }

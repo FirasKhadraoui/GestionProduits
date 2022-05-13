@@ -7450,11 +7450,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Esprit\\GestionProduits\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Esprit\\GestionProduits\\Version avancé\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Esprit\\GestionProduits\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Esprit\\GestionProduits\\Version avancé\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Esprit\\GestionProduits\\Domain\\obj\\",
+      "outputPath": "C:\\Esprit\\GestionProduits\\Version avancé\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",

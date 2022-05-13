@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oS+7idNma/KSUSP5VQgYqc0ZHhKscpKyRhJkzhHJLU9GekpLsXFv1SEcf6cD61/GffLVHIQLpCe2dVIkTaOi3Q==",
+  "dgSpecHash": "D313uhzgHohiWv0Y0Ne6GbVL60oe8rBppjzSjX1cZYCj+bKU+DJSh18RaA7Y8LeieQTuJ2YksoZOZihUz6j3Gw==",
   "success": true,
-  "projectFilePath": "C:\\Esprit\\GestionProduits\\Data\\Data.csproj",
+  "projectFilePath": "C:\\Esprit\\GestionProduits\\Version avancé\\Data\\Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
