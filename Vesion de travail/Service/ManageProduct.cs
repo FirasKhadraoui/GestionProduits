@@ -67,7 +67,7 @@ namespace Service
         {
             var listProductChemical = (from product in products
                         where product is Chemical
-                        && ((Chemical)product).City.Equals(city)
+                        && ((Chemical)product).Myadress.City.Equals(city)
                         select product).ToList();
 
             return listProductChemical.Count();
@@ -76,7 +76,7 @@ namespace Service
         {
             var listProductChemical = (from product in products
                         where product is Chemical
-                        orderby ((Chemical)product).City ascending // ou descending
+                        orderby ((Chemical)product).Myadress.City ascending // ou descending
                         select product).ToList();
 
             return listProductChemical;
@@ -86,8 +86,8 @@ namespace Service
         {
             var query = from product in products
                         where product is Chemical
-                        orderby ((Chemical)product).City ascending // ou descending
-                        group (Chemical)product by ((Chemical)product).City;
+                        orderby ((Chemical)product).Myadress.City ascending // ou descending
+                        group (Chemical)product by ((Chemical)product).Myadress.City;
 
             foreach (var productgroup in query)
             {

@@ -13,31 +13,30 @@ namespace Domain.Entities
     {
         public int ProductId { get; set; }
 
-        [Required(ErrorMessage = "champs obligatoire")]//message d'ereur
+        [Required(ErrorMessage = "champs obligatoire")]  // Message d'ereur
         [StringLength(25, ErrorMessage = "taille max=25")]
         [MaxLength(50)]
         public string Name { get; set; }
 
-        [DataType(DataType.MultilineText)]//  plusieurs lignes
+        [DataType(DataType.MultilineText)]  // Plusieurs lignes
         public string Description { get; set; }
-        [DataType(DataType.Currency)] //pour indiquer qu'il est monnaie
+
+        [DataType(DataType.Currency)] // Pour indiquer qu'il est monnaie
         public double Price { get; set; }
 
         [Range(0, int.MaxValue)]
         public int Quantity { get; set; }
 
-        [Display(Name = "Date de production")] //affichage
-        [DataType(DataType.Date)] //DATE valide
+        [Display(Name = "Date de production")] // Affichage
+        [DataType(DataType.Date)] // DATE valide
         public DateTime DateProd { get; set; }
-        public string TestUpdate { get; set; }
 
-        public string ImageName { get; set; }  
-        //foreign Key properties
-        public int? CategoryId { get; set; }
-        //navigation properties
-
+        public string Image { get; set; }  
+        
+        public int? CategoryId { get; set; } // Foreign Key properties
         [ForeignKey("CategoryId")]
-        public virtual Category MyCategory { get; set; }
+        public virtual Category MyCategory { get; set; }  // Navigation properties
+
         public virtual ICollection<Provider> Providers { get; set; }
 
         //public override void GetDetails()

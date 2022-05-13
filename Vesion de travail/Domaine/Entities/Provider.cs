@@ -13,32 +13,22 @@ namespace Domain.Entities
         [Key]
         public int Id { get; set; }
         public string UserName { get; set; }
+
         [Required]
         [MaxLength(8)]
         [DataType(DataType.Password)]
-
-        #region Partie 3: Encapsulation
-        private string password;
-        public string Password
-        {
-            get { return password; }
-            set
-            {
-                if (value.Length >= 5 && value.Length <= 20) password = value;
-                else Console.WriteLine("Le password doit avoir une taille dans l'intervalle [5, 20]");
-            }
-        }
-        #endregion
+        public string Password;
 
         [Required]
         [Compare("Password", ErrorMessage = "incorrect PSwd")]
         [DataType(DataType.Password)]
-        [NotMapped]//on l'enrgistre pas dans BD
+        [NotMapped]  // On l'enrgistre pas dans BD
         public string ConfirmPassword { get; set; }
 
         [Required(ErrorMessage = "Champs obligatoire")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
+
         public bool IsApproved { get; set; }
         public DateTime? DateCreated { get; set; }  // ?  nullable
         //navigation properties

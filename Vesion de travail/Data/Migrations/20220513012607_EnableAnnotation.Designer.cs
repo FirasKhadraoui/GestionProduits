@@ -4,14 +4,16 @@ using Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Data.Migrations
 {
     [DbContext(typeof(GestionProduitsContext))]
-    partial class GestionProduitsContextModelSnapshot : ModelSnapshot
+    [Migration("20220513012607_EnableAnnotation")]
+    partial class EnableAnnotation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -137,6 +139,9 @@ namespace Data.Migrations
                     b.Property<string>("LabName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("StreetAddress")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasDiscriminator().HasValue("Chemical");
                 });
 
@@ -162,32 +167,6 @@ namespace Data.Migrations
                         .HasForeignKey("ProvidersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("Domain.Entities.Chemical", b =>
-                {
-                    b.OwnsOne("Domain.Entities.Adress", "Myadress", b1 =>
-                        {
-                            b1.Property<int>("ChemicalProductId")
-                                .ValueGeneratedOnAdd()
-                                .HasColumnType("int")
-                                .UseIdentityColumn();
-
-                            b1.Property<string>("City")
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("StreetAdress")
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("ChemicalProductId");
-
-                            b1.ToTable("Products");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ChemicalProductId");
-                        });
-
-                    b.Navigation("Myadress");
                 });
 
             modelBuilder.Entity("Domain.Entities.Category", b =>

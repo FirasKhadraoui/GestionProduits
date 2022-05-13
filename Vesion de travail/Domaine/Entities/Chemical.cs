@@ -10,8 +10,7 @@ namespace Domain.Entities
     {
         public string LabName { get; set; }
         public string City { get; set; }
-        public string StreetAddress { get; set; }
-        //public Adress LabAddress { get; set; }
+        public Adress Myadress { get; set; }
 
         #region Partie 4: Polymorphisme
         //public override void GetMyType()
