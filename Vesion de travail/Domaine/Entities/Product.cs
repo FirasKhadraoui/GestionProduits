@@ -39,6 +39,9 @@ namespace Domain.Entities
 
         public virtual ICollection<Provider> Providers { get; set; }
 
+        public virtual ICollection<Facture> Factures { get; set; }
+
+
         //public override void GetDetails()
         //{
         //    Console.WriteLine("ProductId: " + ProductId + " ; Name : " + Name + "DateProd: " + DateProd + " ; Description: " + Description + " ; Price : " + Price + " ; Quantity:" + Quantity);

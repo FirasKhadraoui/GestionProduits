@@ -13,8 +13,7 @@ namespace Domain.Entities
 {
     //[Owned] // Sii on utilise data annotations
 
-    [Owned]
-    //[ComplexType]
+    [ComplexType]
     public class Adress
     {   
         public string City { get; set; }

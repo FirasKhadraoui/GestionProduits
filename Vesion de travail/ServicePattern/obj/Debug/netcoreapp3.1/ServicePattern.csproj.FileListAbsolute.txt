@@ -1,0 +1,5 @@
+C:\Esprit\GestionProduits\Vesion de travail\ServicePattern\obj\Debug\netcoreapp3.1\ServicePattern.csproj.AssemblyReference.cache
+C:\Esprit\GestionProduits\Vesion de travail\ServicePattern\obj\Debug\netcoreapp3.1\ServicePattern.GeneratedMSBuildEditorConfig.editorconfig
+C:\Esprit\GestionProduits\Vesion de travail\ServicePattern\obj\Debug\netcoreapp3.1\ServicePattern.AssemblyInfoInputs.cache
+C:\Esprit\GestionProduits\Vesion de travail\ServicePattern\obj\Debug\netcoreapp3.1\ServicePattern.AssemblyInfo.cs
+C:\Esprit\GestionProduits\Vesion de travail\ServicePattern\obj\Debug\netcoreapp3.1\ServicePattern.csproj.CoreCompileInputs.cache

@@ -2165,6 +2165,19 @@
         "runtime": {
           "bin/placeholder/Domain.dll": {}
         }
+      },
+      "ServicePattern/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ServicePattern.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ServicePattern.dll": {}
+        }
       }
     }
   },
@@ -7380,12 +7393,18 @@
       "type": "project",
       "path": "../Domaine/Domain.csproj",
       "msbuildProject": "../Domaine/Domain.csproj"
+    },
+    "ServicePattern/1.0.0": {
+      "type": "project",
+      "path": "../ServicePattern/ServicePattern.csproj",
+      "msbuildProject": "../ServicePattern/ServicePattern.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Data >= 1.0.0",
-      "Domain >= 1.0.0"
+      "Domain >= 1.0.0",
+      "ServicePattern >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7420,6 +7439,9 @@
             },
             "C:\\Esprit\\GestionProduits\\Vesion de travail\\Domaine\\Domain.csproj": {
               "projectPath": "C:\\Esprit\\GestionProduits\\Vesion de travail\\Domaine\\Domain.csproj"
+            },
+            "C:\\Esprit\\GestionProduits\\Vesion de travail\\ServicePattern\\ServicePattern.csproj": {
+              "projectPath": "C:\\Esprit\\GestionProduits\\Vesion de travail\\ServicePattern\\ServicePattern.csproj"
             }
           }
         }

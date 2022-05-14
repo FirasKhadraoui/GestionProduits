@@ -2209,13 +2209,27 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Data": "1.0.0",
-          "Domain": "1.0.0"
+          "Domain": "1.0.0",
+          "ServicePattern": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Service.dll": {}
         },
         "runtime": {
           "bin/placeholder/Service.dll": {}
+        }
+      },
+      "ServicePattern/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ServicePattern.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ServicePattern.dll": {}
         }
       }
     }
@@ -7493,6 +7507,11 @@
       "type": "project",
       "path": "../Service/Service.csproj",
       "msbuildProject": "../Service/Service.csproj"
+    },
+    "ServicePattern/1.0.0": {
+      "type": "project",
+      "path": "../ServicePattern/ServicePattern.csproj",
+      "msbuildProject": "../ServicePattern/ServicePattern.csproj"
     }
   },
   "projectFileDependencyGroups": {

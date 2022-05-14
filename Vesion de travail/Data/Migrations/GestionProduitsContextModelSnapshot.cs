@@ -27,12 +27,58 @@ namespace Data.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("MyName");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("CategoryId");
 
-                    b.ToTable("Categories");
+                    b.ToTable("MyCategories");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Client", b =>
+                {
+                    b.Property<int>("Cin")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<DateTime>("DateNaissance")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nom")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Prenom")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Cin");
+
+                    b.ToTable("Clients");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Facture", b =>
+                {
+                    b.Property<int>("ProductFk")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ClientFk")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateAchat")
+                        .HasColumnType("datetime2");
+
+                    b.Property<float>("prix")
+                        .HasColumnType("real");
+
+                    b.HasKey("ProductFk", "ClientFk", "DateAchat");
+
+                    b.HasIndex("ClientFk");
+
+                    b.ToTable("Factures");
                 });
 
             modelBuilder.Entity("Domain.Entities.Product", b =>
@@ -51,23 +97,21 @@ namespace Data.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(25)
-                        .HasColumnType("nvarchar(25)")
-                        .HasColumnName("MyName");
+                        .HasColumnType("nvarchar(25)");
 
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
                     b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("isBiological")
                         .HasColumnType("int");
 
                     b.HasKey("ProductId");
@@ -76,7 +120,7 @@ namespace Data.Migrations
 
                     b.ToTable("Products");
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Product");
+                    b.HasDiscriminator<int>("isBiological").HasValue(0);
                 });
 
             modelBuilder.Entity("Domain.Entities.Provider", b =>
@@ -116,7 +160,7 @@ namespace Data.Migrations
 
                     b.HasIndex("ProvidersId");
 
-                    b.ToTable("ProductProvider");
+                    b.ToTable("Providings");
                 });
 
             modelBuilder.Entity("Domain.Entities.Biological", b =>
@@ -126,7 +170,7 @@ namespace Data.Migrations
                     b.Property<string>("Herbs")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasDiscriminator().HasValue("Biological");
+                    b.HasDiscriminator().HasValue(1);
                 });
 
             modelBuilder.Entity("Domain.Entities.Chemical", b =>
@@ -139,14 +183,34 @@ namespace Data.Migrations
                     b.Property<string>("LabName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasDiscriminator().HasValue("Chemical");
+                    b.HasDiscriminator().HasValue(2);
+                });
+
+            modelBuilder.Entity("Domain.Entities.Facture", b =>
+                {
+                    b.HasOne("Domain.Entities.Client", "client")
+                        .WithMany("Factures")
+                        .HasForeignKey("ClientFk")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Entities.Product", "product")
+                        .WithMany("Factures")
+                        .HasForeignKey("ProductFk")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("client");
+
+                    b.Navigation("product");
                 });
 
             modelBuilder.Entity("Domain.Entities.Product", b =>
                 {
                     b.HasOne("Domain.Entities.Category", "MyCategory")
                         .WithMany("Products")
-                        .HasForeignKey("CategoryId");
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("MyCategory");
                 });
@@ -176,10 +240,14 @@ namespace Data.Migrations
                                 .UseIdentityColumn();
 
                             b1.Property<string>("City")
-                                .HasColumnType("nvarchar(max)");
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("MyCity");
 
                             b1.Property<string>("StreetAdress")
-                                .HasColumnType("nvarchar(max)");
+                                .HasMaxLength(50)
+                                .HasColumnType("nvarchar(50)")
+                                .HasColumnName("MyStreet");
 
                             b1.HasKey("ChemicalProductId");
 
@@ -195,6 +263,16 @@ namespace Data.Migrations
             modelBuilder.Entity("Domain.Entities.Category", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Client", b =>
+                {
+                    b.Navigation("Factures");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Product", b =>
+                {
+                    b.Navigation("Factures");
                 });
 #pragma warning restore 612, 618
         }
