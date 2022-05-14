@@ -63,7 +63,7 @@ namespace ServicePattern
                 utwk.Commit();
                 //utw
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }

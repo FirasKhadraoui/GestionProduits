@@ -14,6 +14,7 @@
           "Microsoft.EntityFrameworkCore.Design": "5.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.0",
+          "Microsoft.Extensions.DependencyInjection": "5.0.0",
           "Service": "1.0.0"
         },
         "runtime": {
@@ -1470,10 +1471,19 @@
       "Service/1.0.0": {
         "dependencies": {
           "Data": "1.0.0",
-          "Domain": "1.0.0"
+          "Domain": "1.0.0",
+          "ServicePattern": "1.0.0"
         },
         "runtime": {
           "Service.dll": {}
+        }
+      },
+      "ServicePattern/1.0.0": {
+        "dependencies": {
+          "Data": "1.0.0"
+        },
+        "runtime": {
+          "ServicePattern.dll": {}
         }
       }
     }
@@ -2419,6 +2429,11 @@
       "sha512": ""
     },
     "Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ServicePattern/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

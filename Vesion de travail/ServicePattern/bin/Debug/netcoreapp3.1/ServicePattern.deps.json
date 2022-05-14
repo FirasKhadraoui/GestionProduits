@@ -6,14 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Service/1.0.0": {
+      "ServicePattern/1.0.0": {
         "dependencies": {
-          "Data": "1.0.0",
-          "Domain": "1.0.0",
-          "ServicePattern": "1.0.0"
+          "Data": "1.0.0"
         },
         "runtime": {
-          "Service.dll": {}
+          "ServicePattern.dll": {}
         }
       },
       "Castle.Core/4.4.1": {
@@ -1436,19 +1434,11 @@
         "runtime": {
           "Domain.dll": {}
         }
-      },
-      "ServicePattern/1.0.0": {
-        "dependencies": {
-          "Data": "1.0.0"
-        },
-        "runtime": {
-          "ServicePattern.dll": {}
-        }
       }
     }
   },
   "libraries": {
-    "Service/1.0.0": {
+    "ServicePattern/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -2362,11 +2352,6 @@
       "sha512": ""
     },
     "Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ServicePattern/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

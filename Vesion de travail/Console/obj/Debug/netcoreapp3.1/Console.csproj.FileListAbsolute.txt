@@ -411,9 +411,11 @@ C:\Esprit\GestionProduits\Vesion de travail\Console\bin\Debug\netcoreapp3.1\runt
 C:\Esprit\GestionProduits\Vesion de travail\Console\bin\Debug\netcoreapp3.1\Data.dll
 C:\Esprit\GestionProduits\Vesion de travail\Console\bin\Debug\netcoreapp3.1\Domain.dll
 C:\Esprit\GestionProduits\Vesion de travail\Console\bin\Debug\netcoreapp3.1\Service.dll
+C:\Esprit\GestionProduits\Vesion de travail\Console\bin\Debug\netcoreapp3.1\ServicePattern.dll
 C:\Esprit\GestionProduits\Vesion de travail\Console\bin\Debug\netcoreapp3.1\Data.pdb
 C:\Esprit\GestionProduits\Vesion de travail\Console\bin\Debug\netcoreapp3.1\Domain.pdb
 C:\Esprit\GestionProduits\Vesion de travail\Console\bin\Debug\netcoreapp3.1\Service.pdb
+C:\Esprit\GestionProduits\Vesion de travail\Console\bin\Debug\netcoreapp3.1\ServicePattern.pdb
 C:\Esprit\GestionProduits\Vesion de travail\Console\obj\Debug\netcoreapp3.1\Console.csproj.AssemblyReference.cache
 C:\Esprit\GestionProduits\Vesion de travail\Console\obj\Debug\netcoreapp3.1\Console.GeneratedMSBuildEditorConfig.editorconfig
 C:\Esprit\GestionProduits\Vesion de travail\Console\obj\Debug\netcoreapp3.1\Console.AssemblyInfoInputs.cache
