@@ -28,17 +28,25 @@ namespace Console
                 .AddSingleton<IDatabaseFactory, DatabaseFactory>()
                 .AddDbContext<GestionProduitsContext>()
                 .BuildServiceProvider();
-            var serviceCategory = serviceProvider.GetService<ICategoryService>();
 
 
-            Category cat = new Category()
-            {
-                Name = "cat1"
-            };
-            serviceCategory.Add(cat);
-            serviceCategory.Commit();
-            
-             
+            //var serviceCategory = serviceProvider.GetService<ICategoryService>();
+
+            //Category cat = new Category()
+            //{
+            //    Name = "cat1"
+            //};
+            //serviceCategory.Add(cat);
+            //serviceCategory.Commit();
+
+            initData(serviceProvider);
+
+
+
+
+
+
+
             //#region Partie 2: Type valeur / Type référence 
             ////Provider P1 = new Provider() { ConfirmPassword = "12345", Password = "12345" };
 
@@ -60,7 +68,7 @@ namespace Console
             /////*Password Superieur a 5*/
             ////Provider P3 = new Provider() { ConfirmPassword = "123456", Password = "123456" };
             ////System.Console.ReadKey();
-            
+
             //#endregion
 
             //#region Partie 4 Polymorphisme De Surcharge
@@ -375,7 +383,7 @@ namespace Console
             ////System.Console.ReadKey();
 
             //#endregion
-            
+
 
         }
 
@@ -387,12 +395,18 @@ namespace Console
             var serviceClient = spr.GetService<IClientService>();
             var serviceFacture = spr.GetService<IFactureService>();
 
-            Category cat1 = new Category() { Name = "FRUIT" };
-            Category cat2 = new Category() { Name = "ALIMENTAIRE" };
+            Category fruit = new Category() { Name = "FRUIT" };
+            Category alimentaire = new Category() { Name = "ALIMENTAIRE" };
 
-            serviceCategory.Add(cat1);
-            serviceCategory.Add(cat2);
+            serviceCategory.Add(fruit);
+            serviceCategory.Add(alimentaire);
             serviceCategory.Commit();
+
+            Adress add1 = new Adress()
+            {
+                City = "sousse",
+                StreetAdress = "22"
+            };
 
             //Products
             Product acide = new Chemical()
@@ -402,8 +416,10 @@ namespace Console
                 Description = "Monohydrate - E330 - USP32",
                 Price = 90,
                 Quantity = 30,
-                City = "Sousse"
+                Myadress = add1,
+                MyCategory = alimentaire
             };
+            
             Product cacao = new Chemical()
             {
                 DateProd = new DateTime(2000, 12, 12),
@@ -411,8 +427,9 @@ namespace Console
                 Description = "10% -12%",
                 Price = 419,
                 Quantity = 80,
-                City = "Sfax"
-            };
+                Myadress = add1,
+                MyCategory = fruit
+            };         
 
             Product dioxyde = new Chemical()
             {
@@ -421,8 +438,10 @@ namespace Console
                 Description = "TiO2 grade alimentaire, cosmétique et pharmaceutique.",
                 Price = 200,
                 Quantity = 50,
-                City = "Tunis"
+                Myadress = add1, 
+                MyCategory = fruit
             };
+            
             Product amidon = new Chemical()
             {
                 DateProd = new DateTime(2000, 12, 12),
@@ -430,8 +449,10 @@ namespace Console
                 Description = "Amidon de maïs natif",
                 Price = 70,
                 Quantity = 30,
-                City = "Tunis"
+                Myadress = add1,
+                MyCategory = alimentaire
             };
+            
             Product blackberry = new Biological()
             {
                 DateProd = new DateTime(2000, 12, 12),
@@ -439,8 +460,7 @@ namespace Console
                 Description = "",
                 Price = 60,
                 ProductId = 0,
-                Quantity = 0
-
+                MyCategory = fruit
             };
 
             Product apple = new Biological()
@@ -450,10 +470,10 @@ namespace Console
                 Name = "Apple",
                 Price = 100.00,
                 ProductId = 0,
-                Quantity = 100
-
+                Quantity = 100,
+                MyCategory = fruit
             };
-
+            
             Product avocado = new Biological()
             {
                 DateProd = new DateTime(2000, 12, 12),
@@ -461,11 +481,36 @@ namespace Console
                 Name = "Avocado",
                 Price = 100.00,
                 ProductId = 0,
-                Quantity = 100
-
+                Quantity = 100,
+                MyCategory = alimentaire
             };
 
-            List<Product> products = new List<Product>() { acide, cacao, dioxyde, amidon, blackberry, apple, avocado };
+            serviceProduct.Add(acide);
+            serviceProduct.Add(cacao);
+            serviceProduct.Add(dioxyde);
+            serviceProduct.Add(amidon);
+            serviceProduct.Add(blackberry);
+            serviceProduct.Add(apple);
+            serviceProduct.Add(avocado);
+            serviceProduct.Commit();
+
+            List<Product> products1 = new List<Product>() { acide, cacao, dioxyde };
+            List<Product> products2 = new List<Product>() {amidon, blackberry, apple, avocado };
+            List<Product> products3 = new List<Product>() { acide, cacao, dioxyde, amidon, blackberry, apple };
+
+            Provider sater = new Provider() { Id = 1, UserName = "Medical Provider", Password= "1111",Email="A@gmail.com", Products= products1 };
+            Provider sudMedical = new Provider() { Id = 2, UserName = "Fruit-SA Provider", Password = "1111", Email = "A@gmail.com", Products= products2 };
+            Provider palliserSa = new Provider() { Id = 3, UserName = "Fruit-CP  Provider", Password = "1111", Email = "A@gmail.com", Products = products3 };
+            Provider prov4 = new Provider() { Id = 4, UserName = "Chemical Med-Provider", Password = "1111", Email = "A@gmail.com", Products = products1 };
+            Provider prov5 = new Provider() { Id = 5, UserName = "Bio Provider", Password = "1111", Email = "A@gmail.com", Products= products2 };
+            List<Provider> providers = new List<Provider>() { sater, sudMedical, palliserSa, prov4, prov5 };
+
+            serviceProvider.Add(sater);
+            serviceProvider.Add(sudMedical);
+            serviceProvider.Add(palliserSa);
+            serviceProvider.Add(prov4);
+            serviceProvider.Add(prov5);
+            serviceProvider.Commit();
         }
 
     }
