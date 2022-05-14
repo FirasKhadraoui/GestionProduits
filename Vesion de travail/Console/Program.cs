@@ -19,6 +19,10 @@ namespace Console
             var serviceCollection = new ServiceCollection();
             var serviceProvider = serviceCollection
                 .AddScoped<ICategoryService, CategoryService>()
+                .AddScoped<IProductService, ProductService>()
+                .AddScoped<IProviderService, ProviderService>()
+                .AddScoped<IClientService, ClientService>()
+                .AddScoped<IFactureService, FactureService>()
                 .AddTransient<IUnitOfWork, UnitOfWork>()
                 .AddTransient(typeof(IRepositoryBase <>),typeof(RepositoryBase<>))
                 .AddSingleton<IDatabaseFactory, DatabaseFactory>()
@@ -374,5 +378,95 @@ namespace Console
             
 
         }
+
+        public static void initData(ServiceProvider spr)
+        {
+            var serviceCategory = spr.GetService<ICategoryService>();
+            var serviceProduct = spr.GetService<IProductService>();
+            var serviceProvider = spr.GetService<IProviderService>();
+            var serviceClient = spr.GetService<IClientService>();
+            var serviceFacture = spr.GetService<IFactureService>();
+
+            Category cat1 = new Category() { Name = "FRUIT" };
+            Category cat2 = new Category() { Name = "ALIMENTAIRE" };
+
+            serviceCategory.Add(cat1);
+            serviceCategory.Add(cat2);
+            serviceCategory.Commit();
+
+            //Products
+            Product acide = new Chemical()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Name = "ACIDE CITRIQUE",
+                Description = "Monohydrate - E330 - USP32",
+                Price = 90,
+                Quantity = 30,
+                City = "Sousse"
+            };
+            Product cacao = new Chemical()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Name = "POUDRE DE CACAO NATURELLE",
+                Description = "10% -12%",
+                Price = 419,
+                Quantity = 80,
+                City = "Sfax"
+            };
+
+            Product dioxyde = new Chemical()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Name = "DIOXYDE DE TITANE",
+                Description = "TiO2 grade alimentaire, cosmétique et pharmaceutique.",
+                Price = 200,
+                Quantity = 50,
+                City = "Tunis"
+            };
+            Product amidon = new Chemical()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Name = "AMIDON DE MAÏS",
+                Description = "Amidon de maïs natif",
+                Price = 70,
+                Quantity = 30,
+                City = "Tunis"
+            };
+            Product blackberry = new Biological()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Name = "Blackberry",
+                Description = "",
+                Price = 60,
+                ProductId = 0,
+                Quantity = 0
+
+            };
+
+            Product apple = new Biological()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Description = "",
+                Name = "Apple",
+                Price = 100.00,
+                ProductId = 0,
+                Quantity = 100
+
+            };
+
+            Product avocado = new Biological()
+            {
+                DateProd = new DateTime(2000, 12, 12),
+                Description = "",
+                Name = "Avocado",
+                Price = 100.00,
+                ProductId = 0,
+                Quantity = 100
+
+            };
+
+            List<Product> products = new List<Product>() { acide, cacao, dioxyde, amidon, blackberry, apple, avocado };
+        }
+
     }
 }
